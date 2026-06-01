@@ -1,0 +1,95 @@
+export const timeline = {
+  overallProgress: 71,
+  currentPhase: 5,
+  totalPhases: 7,
+  completedPhases: 4,
+  inProgressPhases: 1,
+  upcomingPhases: 2,
+  phases: [
+    {
+      phase: 1,
+      title: "Study Conception & Protocol Development",
+      date: "Jan 2026",
+      status: "completed",
+      highlights: [
+        "Research questions formulated",
+        "Study sites mapped",
+        "Ethical clearance application submitted",
+      ],
+      keyMoment: "Protocol approved in under 3 weeks",
+    },
+    {
+      phase: 2,
+      title: "Ethical Clearance & Institutional Approval",
+      date: "Feb 2026",
+      status: "completed",
+      highlights: [
+        "IRB clearance received",
+        "Questionnaire validated",
+        "Institutional sign-off obtained",
+      ],
+    },
+    {
+      phase: 3,
+      title: "Research Team Recruitment & Training",
+      date: "Mar 2026",
+      status: "completed",
+      highlights: [
+        "Research assistants recruited",
+        "Full-day training session",
+        "Field protocols standardized",
+      ],
+      keyMoment: "Training session led by Abdulrahman Abdulbasit Opeyemi",
+    },
+    {
+      phase: 4,
+      title: "Pilot Study & Instrument Pre-Testing",
+      date: "Apr 2026",
+      status: "completed",
+      highlights: [
+        "Pilot at 1 site (30 participants)",
+        "Instrument refined",
+        "Data pipeline validated",
+      ],
+    },
+    {
+      phase: 5,
+      title: "Community Data Collection — All Sites Active",
+      date: "May 2026",
+      status: "active",
+      highlights: [
+        "4 primary sites active",
+        "Mosque Friday visits ongoing",
+        "Weekly data review meetings",
+      ],
+      enrollment: {
+        current: 248,
+        target: 400,
+        percentage: 62,
+      },
+    },
+    {
+      phase: 6,
+      title: "Data Cleaning & Statistical Analysis",
+      date: "Jul 2026",
+      status: "upcoming",
+      highlights: [
+        "SPSS/Stata analysis",
+        "KAP domain scoring",
+        "Logistic regression modeling",
+      ],
+    },
+    {
+      phase: 7,
+      title: "Report Writing & Dissemination",
+      date: "Aug 2026",
+      status: "upcoming",
+      highlights: [
+        "Full academic report",
+        "Policy brief for Kwara MOH",
+        "Journal submission",
+      ],
+      badge: "Target: Q3 2026",
+    },
+  ],
+};

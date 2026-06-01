@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: #0a1628;
+    --deep-blue: #0f2d5c;
+    --royal-blue: #1a4a8a;
+    --mid-blue: #2563eb;
+    --sky-blue: #3b82f6;
+    --light-blue: #bfdbfe;
+    --pale-blue: #eff6ff;
+    --gold: #d4a017;
+    --gold-light: #fbbf24;
+    --gold-pale: #fefce8;
+    --text-dark: #0f172a;
+    --text-mid: #334155;
+    --text-muted: #64748b;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+    --radius: 0.625rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--text-mid);
+    background: #f8faff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .section-content {
+    transform-style: preserve-3d;
+  }
+
+  .gold-label {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .clinical-card {
+    background: white;
+    border-left: 4px solid var(--royal-blue);
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+  }
+
+  .clinical-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(26,74,138,0.08);
+    border-left-color: var(--sky-blue);
+  }
+
+  .waveform {
+    width: 45vw;
+    height: 120px;
+    overflow: visible;
+  }
+
+  .waveform path {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+    stroke-dasharray: 2400;
+    stroke-dashoffset: 2400;
+    animation: dash 3.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate;
+  }
+
+  .headline-gold {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .char {
+    display: inline-block;
+    opacity: 0;
+  }
+
+  .opacity-reveal-animated .char {
+    animation: opReveal 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+    animation-delay: calc(var(--word-index) * 0.15s + var(--char-index) * 0.04s);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes opReveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes dash {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .waveform path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
