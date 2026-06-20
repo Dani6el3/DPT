@@ -115,15 +115,14 @@ export default function Team() {
         </div>
 
         {/* Lead Researcher — Feature Card */}
-        <div
-          data-pi
-          className="bg-navy rounded-2xl p-6 sm:p-10 mb-8"
-        >
+        <div data-pi className="bg-navy rounded-2xl p-6 sm:p-10 mb-8">
           <div className="flex flex-col sm:flex-row items-start gap-6">
             <Avatar photo={pi.photo} initials={pi.initials} size="lg" />
             <div className="flex-1">
               <span
-                className={`inline-block text-[11px] font-semibold px-3 py-1 rounded-full mb-3 ${badgeColorMap[pi.badgeColor]}`}
+                className={`inline-block text-[11px] font-semibold px-3 py-1 rounded-full mb-3 ${
+                  badgeColorMap[pi.badgeColor]
+                }`}
               >
                 {pi.badge}
               </span>
@@ -163,11 +162,16 @@ export default function Team() {
               className="bg-white rounded-xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] text-center hover:-translate-y-1 hover:shadow-[0_12px_24px_rgba(26,74,138,0.1)] transition-all duration-300"
             >
               <div className="flex justify-center mb-4">
-                <Avatar photo={member.photo} initials={member.initials} size="md" />
+                <Avatar
+                  photo={member.photo}
+                  initials={member.initials}
+                  size="md"
+                />
               </div>
               <span
                 className={`inline-block text-[10px] font-semibold px-2.5 py-0.5 rounded-full mb-2 ${
-                  badgeColorMap[member.badgeColor] || "bg-gray-100 text-gray-600"
+                  badgeColorMap[member.badgeColor] ||
+                  "bg-gray-100 text-gray-600"
                 }`}
               >
                 {member.badge}
