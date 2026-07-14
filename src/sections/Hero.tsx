@@ -1,17 +1,40 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Users, MapPin, Clipboard, Microscope, ChevronDown } from "lucide-react";
+import {
+  Users,
+  MapPin,
+  Clipboard,
+  Microscope,
+  ChevronDown,
+} from "lucide-react";
 import { siteConfig } from "../data/siteConfig";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const WAVE_PATH = "M0,60 L50,60 L60,30 L70,90 L80,20 L90,100 L100,60 L200,60 L210,40 L220,80 L230,60 L350,60 L360,35 L370,85 L380,25 L390,95 L400,60 L800,60";
+const WAVE_PATH =
+  "M0,60 L50,60 L60,30 L70,90 L80,20 L90,100 L100,60 L200,60 L210,40 L220,80 L230,60 L350,60 L360,35 L370,85 L380,25 L390,95 L400,60 L800,60";
 
 const statItems = [
-  { icon: Users, value: 400, label: "Target Participants", sub: "Community members, Ilorin West LGA" },
-  { icon: MapPin, value: 6, suffix: "+", label: "Active Study Sites", sub: "PHCs, Hospitals, Mosques, Markets" },
-  { icon: Clipboard, value: 39, label: "Questionnaire Items", sub: "Across 7 KAP domains" },
+  {
+    icon: Users,
+    value: 400,
+    label: "Target Participants",
+    sub: "Community members, Ilorin West LGA",
+  },
+  {
+    icon: MapPin,
+    value: 3,
+    suffix: "+",
+    label: "Active Study Sites",
+    sub: "Hospitals, Mosques, Markets",
+  },
+  {
+    icon: Clipboard,
+    value: 39,
+    label: "Questionnaire Items",
+    sub: "Across 7 KAP domains",
+  },
 ];
 
 export default function Hero() {
@@ -62,7 +85,7 @@ export default function Hero() {
             ease: "power3.out",
             stagger: 0.03,
             delay: 0.3,
-          }
+          },
         );
       }
 
@@ -81,7 +104,9 @@ export default function Hero() {
               duration: 1.5,
               ease: "power2.out",
               onUpdate: () => {
-                if (el) el.textContent = Math.round(obj.val) + (statItems[i].suffix || "");
+                if (el)
+                  el.textContent =
+                    Math.round(obj.val) + (statItems[i].suffix || "");
               },
             });
           },
@@ -115,7 +140,12 @@ export default function Hero() {
           );
         })}
         {wi < words.length - 1 && (
-          <span className="char" style={{ display: "inline-block", opacity: 0 }}>&nbsp;</span>
+          <span
+            className="char"
+            style={{ display: "inline-block", opacity: 0 }}
+          >
+            &nbsp;
+          </span>
         )}
       </span>
     ));
@@ -179,11 +209,36 @@ export default function Hero() {
       {/* Waveform container */}
       <div className="absolute inset-0 z-[3] flex flex-col justify-center pl-[10vw] pointer-events-none">
         {[
-          { top: "calc(50% - 100px)", stroke: "#3b82f6", opacity: 0.7, delay: "0s" },
-          { top: "calc(50% - 60px)", stroke: "#2563eb", opacity: 0.4, delay: "0.6s" },
-          { top: "calc(50% - 20px)", stroke: "#1a4a8a", opacity: 0.25, delay: "1.2s" },
-          { top: "calc(50% + 20px)", stroke: "#2563eb", opacity: 0.35, delay: "0.3s" },
-          { top: "calc(50% + 60px)", stroke: "#3b82f6", opacity: 0.15, delay: "1.8s" },
+          {
+            top: "calc(50% - 100px)",
+            stroke: "#3b82f6",
+            opacity: 0.7,
+            delay: "0s",
+          },
+          {
+            top: "calc(50% - 60px)",
+            stroke: "#2563eb",
+            opacity: 0.4,
+            delay: "0.6s",
+          },
+          {
+            top: "calc(50% - 20px)",
+            stroke: "#1a4a8a",
+            opacity: 0.25,
+            delay: "1.2s",
+          },
+          {
+            top: "calc(50% + 20px)",
+            stroke: "#2563eb",
+            opacity: 0.35,
+            delay: "0.3s",
+          },
+          {
+            top: "calc(50% + 60px)",
+            stroke: "#3b82f6",
+            opacity: 0.15,
+            delay: "1.8s",
+          },
         ].map((cfg, i) => (
           <svg
             key={i}
@@ -191,7 +246,8 @@ export default function Hero() {
             style={{
               top: cfg.top,
               opacity: cfg.opacity,
-              filter: i === 0 ? "drop-shadow(0 0 4px rgba(59,130,246,0.4))" : "none",
+              filter:
+                i === 0 ? "drop-shadow(0 0 4px rgba(59,130,246,0.4))" : "none",
             }}
             viewBox="0 0 800 120"
           >
@@ -205,9 +261,11 @@ export default function Hero() {
       </div>
 
       {/* Scan line */}
-      <div className="absolute top-0 h-full w-[2px] z-[4] pointer-events-none animate-scan"
+      <div
+        className="absolute top-0 h-full w-[2px] z-[4] pointer-events-none animate-scan"
         style={{
-          background: "linear-gradient(to bottom, transparent, rgba(59,130,246,0.3), transparent)",
+          background:
+            "linear-gradient(to bottom, transparent, rgba(59,130,246,0.3), transparent)",
         }}
       />
 
@@ -244,14 +302,14 @@ export default function Hero() {
             {/* Subheadline */}
             <p className="text-[17px] text-white/65 font-body max-w-[480px] mb-4">
               A community-based KAP study investigating DPT vaccine knowledge,
-              attitudes, and practices across Kwara State — to build the evidence
-              that protects lives.
+              attitudes, and practices across Kwara State — to build the
+              evidence that protects lives.
             </p>
 
             {/* Meta line */}
             <p className="text-[13px] text-white/40 font-body mb-8">
-              400 Target Participants &middot; Ilorin West LGA &middot; Ethical clearance obtained
-              &middot; Affiliated with Lifinity Ltd.
+              400 Target Participants &middot; Ilorin West LGA &middot; Ethical
+              clearance obtained &middot; Affiliated with Lifinity Ltd.
             </p>
 
             {/* CTAs */}
@@ -283,7 +341,9 @@ export default function Hero() {
                     <div>
                       <div className="flex items-baseline gap-2">
                         <span
-                          ref={(el) => { statRefs.current[i] = el; }}
+                          ref={(el) => {
+                            statRefs.current[i] = el;
+                          }}
                           className="font-mono text-[28px] font-bold text-white"
                         >
                           0
@@ -317,14 +377,16 @@ export default function Hero() {
               {/* Phase pips */}
               <div className="mt-6 pt-4 border-t border-white/10">
                 <p className="text-xs text-white/50 mb-3">
-                  Phase 5 of 7 &middot; Data Collection Active
+                  Phase 6 of 7 &middot; Data Collection Active
                 </p>
                 <div className="flex gap-2">
                   {[...Array(7)].map((_, i) => (
                     <span
                       key={i}
                       className={`w-2 h-2 rounded-full ${
-                        i < 5 ? "bg-sky-blue" : "bg-white/20 border border-white/20"
+                        i < 6
+                          ? "bg-sky-blue"
+                          : "bg-white/20 border border-white/20"
                       }`}
                     />
                   ))}
@@ -340,7 +402,9 @@ export default function Hero() {
         <div className="relative w-px h-10 bg-white/20 overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-3 bg-white/50 animate-scroll-line" />
         </div>
-        <span className="text-[11px] text-white/30 font-body">Scroll to explore</span>
+        <span className="text-[11px] text-white/30 font-body">
+          Scroll to explore
+        </span>
         <ChevronDown className="w-4 h-4 text-white/30 animate-bounce" />
       </div>
     </section>
