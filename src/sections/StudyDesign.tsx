@@ -20,7 +20,7 @@ const methodCards = [
   {
     icon: BarChart3,
     title: "DATA COLLECTION",
-    body: "Trained research assistants administer questionnaires face-to-face at hospitals, primary healthcare centres, community mosques, and open markets. Data secured digitally via Google Forms. Weekly team review sessions ensure consistency and quality control.",
+    body: "Trained research assistants administer questionnaires face-to-face at hospitals, community mosques, and open markets. Data secured digitally via Google Forms. Weekly team review sessions ensure consistency and quality control.",
   },
   {
     icon: TrendingUp,
@@ -53,7 +53,7 @@ export default function StudyDesign() {
             ease: "power3.out",
             stagger: 0.12,
             scrollTrigger: { trigger: header, start: "top 85%" },
-          }
+          },
         );
       }
 
@@ -68,7 +68,7 @@ export default function StudyDesign() {
             ease: "power3.out",
             stagger: 0.1,
             scrollTrigger: { trigger: cardsRef.current, start: "top 85%" },
-          }
+          },
         );
       }
 
@@ -83,7 +83,7 @@ export default function StudyDesign() {
             duration: 0.7,
             ease: "power3.out",
             scrollTrigger: { trigger: sitesPanel, start: "top 85%" },
-          }
+          },
         );
       }
     }, sectionRef);

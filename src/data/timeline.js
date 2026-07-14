@@ -1,10 +1,10 @@
 export const timeline = {
-  overallProgress: 71,
-  currentPhase: 5,
+  overallProgress: 86,
+  currentPhase: 7,
   totalPhases: 7,
-  completedPhases: 4,
+  completedPhases: 6,
   inProgressPhases: 1,
-  upcomingPhases: 2,
+  upcomingPhases: 0,
   phases: [
     {
       phase: 1,
@@ -32,7 +32,7 @@ export const timeline = {
     {
       phase: 3,
       title: "Research Team Recruitment & Training",
-      date: "Mar 2026",
+      date: "Mar-Apr 2026",
       status: "completed",
       highlights: [
         "Research assistants recruited",
@@ -55,24 +55,24 @@ export const timeline = {
     {
       phase: 5,
       title: "Community Data Collection — All Sites Active",
-      date: "May 2026",
-      status: "active",
+      date: "May-Jul 2026",
+      status: "completed",
       highlights: [
         "4 primary sites active",
         "Mosque Friday visits ongoing",
         "Weekly data review meetings",
       ],
       enrollment: {
-        current: 248,
+        current: 400,
         target: 400,
-        percentage: 62,
+        percentage: 100,
       },
     },
     {
       phase: 6,
       title: "Data Cleaning & Statistical Analysis",
       date: "Jul 2026",
-      status: "upcoming",
+      status: "completed",
       highlights: [
         "SPSS/Stata analysis",
         "KAP domain scoring",
@@ -83,7 +83,7 @@ export const timeline = {
       phase: 7,
       title: "Report Writing & Dissemination",
       date: "Aug 2026",
-      status: "upcoming",
+      status: "active",
       highlights: [
         "Full academic report",
         "Policy brief for Kwara MOH",

@@ -98,16 +98,16 @@ export const urgencyStats = [
 ];
 
 export const kapBaseline = [
-  { label: "Knowledge of diphtheria", value: 38, color: "#fbbf24" },
+  { label: "Knowledge of diphtheria", value: 32.8, color: "#fbbf24" },
   {
     label: "Positive attitude toward DPT vaccine",
-    value: 61,
+    value: 33,
     color: "#3b82f6",
   },
-  { label: "DPT series completion rate", value: 54, color: "#1a4a8a" },
+  { label: "DPT series completion rate", value: 31.8, color: "#1a4a8a" },
   {
     label: "Sought professional advice on vaccines",
-    value: 29,
+    value: 33,
     color: "#fde68a",
   },
 ];
