@@ -1,12 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {
-  AlertTriangle,
-  TrendingDown,
-  Calendar,
-  Shield,
-} from "lucide-react";
+import { AlertTriangle, TrendingDown, Calendar, Shield } from "lucide-react";
 import { urgencyStats, kapBaseline, barriers } from "../data/diseaseInfo";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -41,7 +36,7 @@ export default function WhyResearch() {
             ease: "power3.out",
             stagger: 0.12,
             scrollTrigger: { trigger: header, start: "top 85%" },
-          }
+          },
         );
       }
 
@@ -57,7 +52,7 @@ export default function WhyResearch() {
             ease: "power3.out",
             stagger: 0.1,
             scrollTrigger: { trigger: statsRef.current, start: "top 85%" },
-          }
+          },
         );
       }
 
@@ -100,7 +95,7 @@ export default function WhyResearch() {
             ease: "power2.out",
             delay: i * 0.2,
             scrollTrigger: { trigger: kapRef.current, start: "top 80%" },
-          }
+          },
         );
       });
 
@@ -116,7 +111,7 @@ export default function WhyResearch() {
             ease: "power3.out",
             stagger: 0.08,
             scrollTrigger: { trigger: barriersRef.current, start: "top 85%" },
-          }
+          },
         );
       }
     }, sectionRef);
@@ -150,8 +145,8 @@ export default function WhyResearch() {
           </h2>
           <p className="text-base text-text-mid font-body mt-4 max-w-[700px]">
             Despite a nationally declared diphtheria outbreak, community-level
-            data on vaccine knowledge, attitudes, and practices in Kwara State is
-            severely limited. Without evidence, interventions remain generic.
+            data on vaccine knowledge, attitudes, and practices in Kwara State
+            is severely limited. Without evidence, interventions remain generic.
             This study changes that.
           </p>
         </div>
@@ -172,7 +167,9 @@ export default function WhyResearch() {
                   {IconComp && <IconComp className="w-5 h-5 text-royal-blue" />}
                 </div>
                 <span
-                  ref={(el) => { statValueRefs.current[i] = el; }}
+                  ref={(el) => {
+                    statValueRefs.current[i] = el;
+                  }}
                   className="font-mono text-[32px] font-bold text-royal-blue block"
                 >
                   0
@@ -201,11 +198,15 @@ export default function WhyResearch() {
                 <div key={i}>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-sm text-white/80">{item.label}</span>
-                    <span className="font-mono text-sm text-white">{item.value}%</span>
+                    <span className="font-mono text-sm text-white">
+                      {item.value}%
+                    </span>
                   </div>
                   <div className="w-full h-2 rounded-full bg-white/10 overflow-hidden">
                     <div
-                      ref={(el) => { kapBarsRef.current[i] = el; }}
+                      ref={(el) => {
+                        kapBarsRef.current[i] = el;
+                      }}
                       className="h-full rounded-full"
                       style={{ backgroundColor: item.color, width: "0%" }}
                     />
@@ -215,7 +216,7 @@ export default function WhyResearch() {
             </div>
 
             <p className="text-[11px] text-white/30 mt-6">
-              Indicative estimates — primary study data will validate these
+              Data from validated primary study
             </p>
           </div>
 
@@ -254,15 +255,17 @@ export default function WhyResearch() {
         {/* Bottom banner */}
         <div className="mt-10 bg-royal-blue/[0.06] rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <p className="text-sm text-text-mid font-body">
-            Without community-level KAP data, Kwara State cannot design effective,
-            targeted interventions. This study is the first step toward evidence-based
-            immunization policy for the region.
+            Without community-level KAP data, Kwara State cannot design
+            effective, targeted interventions. This study is the first step
+            toward evidence-based immunization policy for the region.
           </p>
           <a
             href="#research-design"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector("#research-design")?.scrollIntoView({ behavior: "smooth" });
+              document
+                .querySelector("#research-design")
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
             className="flex-shrink-0 px-5 py-2.5 bg-royal-blue text-white text-sm font-medium rounded-lg hover:bg-mid-blue transition-colors"
           >

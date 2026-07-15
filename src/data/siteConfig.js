@@ -17,9 +17,9 @@ export const siteConfig = {
     studySites: "3+",
   },
   contact: {
-    email: "[to be updated]",
+    email: "aabdulbasit5@gmail.com",
     phone: "+234 806 810 5240",
-    sites: "PHCs, Hospitals, Mosques, Markets — Ilorin West LGA",
+    sites: " Hospitals, Mosques, Markets — Ilorin West LGA",
     times: "Mon–Fri clinic days + Friday mosque visits",
   },
   social: {

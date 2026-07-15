@@ -74,8 +74,8 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-6 py-6">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <p className="text-xs text-white/30 font-body">
-            A Lifinity Ltd. Research Initiative &middot; Ilorin West LGA, Kwara
-            State, Nigeria &middot; 2026
+            A DPT Research Initiative &middot; Ilorin West LGA, Kwara State,
+            Nigeria &middot; 2026
           </p>
           <p className="text-xs text-white/30 font-body">
             Ethical clearance obtained &middot; Community surveillance study

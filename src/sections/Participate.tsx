@@ -1,14 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {
-  Check,
-  Shield,
-  MapPin,
-  Calendar,
-  Mail,
-  Phone,
-} from "lucide-react";
+import { Check, Shield, MapPin, Calendar, Mail, Phone } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,7 +38,7 @@ export default function Participate() {
             ease: "power3.out",
             stagger: 0.12,
             scrollTrigger: { trigger: header, start: "top 85%" },
-          }
+          },
         );
       }
 
@@ -61,7 +54,7 @@ export default function Participate() {
             ease: "power3.out",
             delay: i * 0.15,
             scrollTrigger: { trigger: col, start: "top 85%" },
-          }
+          },
         );
       });
     }, sectionRef);
@@ -83,9 +76,9 @@ export default function Participate() {
             Your Participation Saves Lives
           </h2>
           <p className="text-base text-white/70 font-body mt-4">
-            Every questionnaire completed brings us closer to the evidence
-            that will reshape vaccine policy in Kwara State. This is science at
-            the community level — and you are at its center.
+            Every questionnaire completed brings us closer to the evidence that
+            will reshape vaccine policy in Kwara State. This is science at the
+            community level — and you are at its center.
           </p>
         </div>
 
@@ -101,7 +94,9 @@ export default function Participate() {
               {eligibilityItems.map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <Check className="w-4 h-4 text-mid-blue mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-text-mid font-body">{item}</span>
+                  <span className="text-sm text-text-mid font-body">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
@@ -138,7 +133,10 @@ export default function Participate() {
           </div>
 
           {/* Right — Contact Card */}
-          <div data-col className="bg-navy/40 backdrop-blur-xl border border-white/[0.08] rounded-2xl p-6 sm:p-8">
+          <div
+            data-col
+            className="bg-navy/40 backdrop-blur-xl border border-white/[0.08] rounded-2xl p-6 sm:p-8"
+          >
             <h3 className="font-display text-xl text-white mb-6">
               Contact the Research Team
             </h3>
@@ -147,7 +145,7 @@ export default function Participate() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-sky-blue flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-white/80 font-body">
-                  PHCs, Hospitals, Mosques, Markets — Ilorin West LGA
+                  Hospitals, Mosques, Markets — Ilorin West LGA
                 </span>
               </div>
               <div className="flex items-start gap-3">
@@ -159,13 +157,13 @@ export default function Participate() {
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-sky-blue flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-white/50 font-body">
-                  [to be updated]
+                  aabdulbasit5@gmail.com
                 </span>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-sky-blue flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-white/50 font-body">
-                  [to be updated]
+                  +234 806 810 5240
                 </span>
               </div>
             </div>
@@ -174,7 +172,7 @@ export default function Participate() {
             <div className="mt-6 bg-white/[0.06] rounded-lg p-4">
               <p className="text-xs text-white/50 font-body leading-relaxed">
                 This study is conducted under the academic and ethical oversight
-                of [Institution] and is affiliated with Lifinity Ltd. All data
+                of [Institution] and is affiliated with RSTHM and NIHR. All data
                 handling complies with Nigerian data protection regulations and
                 international research ethics standards.
               </p>
