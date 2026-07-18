@@ -177,6 +177,16 @@ export default function WhyResearch() {
                 <p className="text-sm text-text-mid font-body mt-2">
                   {stat.label}
                 </p>
+                {stat.source && (
+                  <a
+                    href={stat.source.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-block mt-3 text-xs font-medium text-royal-blue underline underline-offset-2 hover:text-gold"
+                  >
+                    {stat.source.label}
+                  </a>
+                )}
               </div>
             );
           })}
@@ -187,7 +197,7 @@ export default function WhyResearch() {
           {/* KAP Baseline Chart */}
           <div ref={kapRef} className="bg-navy rounded-2xl p-6 sm:p-8">
             <h3 className="font-display text-lg text-white">
-              Estimated Pre-Study KAP Baseline — Kwara State
+              Pre-Study KAP Baseline — Kwara State
             </h3>
             <p className="text-xs text-white/40 mt-1 mb-6">
               Based on available regional immunization and surveillance data

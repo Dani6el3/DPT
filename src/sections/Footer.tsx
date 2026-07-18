@@ -6,14 +6,14 @@ const navLinksRow1 = [
   { label: "Campaign Progress", href: "#progress" },
   { label: "Team", href: "#team" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Participate", href: "#participate" },
+  { label: "Recommendations", href: "#recommendations" },
 ];
 
 const navLinksRow2 = [
   { label: "Privacy Policy", href: "#" },
   { label: "Data Protection", href: "#" },
   { label: "Ethical Clearance", href: "#" },
-  { label: "Contact", href: "#participate" },
+  { label: "Contact", href: "#recommendations" },
 ];
 
 export default function Footer() {

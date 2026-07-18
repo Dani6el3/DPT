@@ -70,14 +70,14 @@ export default function Navbar() {
           <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-gold/30">
             <span className="w-2 h-2 rounded-full bg-gold animate-gold-pulse" />
             <span className="text-xs font-medium text-gold">
-              Live Data Collection
+              Study Completed
             </span>
           </div>
           <button
-            onClick={() => handleNavClick("#participate")}
+            onClick={() => handleNavClick("#recommendations")}
             className="px-5 py-2 bg-mid-blue text-white text-sm font-medium rounded-lg hover:bg-royal-blue transition-colors"
           >
-            Join Study
+            Recommendations
           </button>
         </div>
 
@@ -110,14 +110,14 @@ export default function Navbar() {
           <div className="flex items-center gap-2 px-3 py-2 rounded-full bg-white/5 border border-gold/30 w-fit mt-2">
             <span className="w-2 h-2 rounded-full bg-gold animate-gold-pulse" />
             <span className="text-xs font-medium text-gold">
-              Active Study
+              Study Completed
             </span>
           </div>
           <button
-            onClick={() => handleNavClick("#participate")}
+            onClick={() => handleNavClick("#recommendations")}
             className="mt-2 w-full py-3 bg-mid-blue text-white text-sm font-medium rounded-lg hover:bg-royal-blue transition-colors"
           >
-            Join Study
+            View Recommendations
           </button>
         </div>
       </div>

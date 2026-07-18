@@ -26,8 +26,8 @@ const statItems = [
     icon: MapPin,
     value: 3,
     suffix: "+",
-    label: "Active Study Sites",
-    sub: "Hospitals, Mosques, Markets",
+    label: "Community Study Settings",
+    sub: "Markets, religious centres, schools",
   },
   {
     icon: Clipboard,
@@ -156,8 +156,8 @@ export default function Hero() {
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleParticipateClick = () => {
-    const el = document.querySelector("#participate");
+  const handleRecommendationsClick = () => {
+    const el = document.querySelector("#recommendations");
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -321,10 +321,10 @@ export default function Hero() {
                 Explore the Research
               </button>
               <button
-                onClick={handleParticipateClick}
+                onClick={handleRecommendationsClick}
                 className="px-7 py-3 border border-white/40 text-white font-medium rounded-lg hover:bg-white/10 transition-all"
               >
-                Participate in the Study
+                View Recommendations
               </button>
             </div>
           </div>
@@ -377,7 +377,7 @@ export default function Hero() {
               {/* Phase pips */}
               <div className="mt-6 pt-4 border-t border-white/10">
                 <p className="text-xs text-white/50 mb-3">
-                  Phase 6 of 7 &middot; Data Collection Active
+                  Phase 7 of 7 &middot; Dissemination Underway
                 </p>
                 <div className="flex gap-2">
                   {[...Array(7)].map((_, i) => (

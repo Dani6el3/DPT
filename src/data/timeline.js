@@ -21,7 +21,7 @@ export const timeline = {
     {
       phase: 2,
       title: "Ethical Clearance & Institutional Approval",
-      date: "Feb 2026",
+      date: "Feb-Mar 2026",
       status: "completed",
       highlights: [
         "IRB clearance received",
@@ -74,9 +74,9 @@ export const timeline = {
       date: "Jul 2026",
       status: "completed",
       highlights: [
-        "SPSS/Stata analysis",
-        "KAP domain scoring",
-        "Logistic regression modeling",
+        "SPSS version 29 analysis",
+        "Descriptive KAP statistics",
+        "Chi-square and qualitative content analysis",
       ],
     },
     {

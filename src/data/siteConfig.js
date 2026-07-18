@@ -7,7 +7,6 @@ export const siteConfig = {
     location: "Ilorin West LGA, Kwara State, Nigeria",
     targetParticipants: 400,
     status: "ACTIVE — Data collection completed (2026)",
-    affiliation: "Lifinity Ltd.",
     principalInvestigator: "Abdulrahman Abdulbasit Opeyemi",
     raTeamLead: "Daniel James",
     year: 2026,
@@ -19,8 +18,8 @@ export const siteConfig = {
   contact: {
     email: "aabdulbasit5@gmail.com",
     phone: "+234 806 810 5240",
-    sites: " Hospitals, Mosques, Markets — Ilorin West LGA",
-    times: "Mon–Fri clinic days + Friday mosque visits",
+    sites: " Hospitals, Markets — Ilorin West LGA",
+    times: "Sobi Specialist hospital clinic days",
   },
   social: {
     linkedin: "",
@@ -31,6 +30,6 @@ export const siteConfig = {
     { label: "Campaign Progress", href: "#progress" },
     { label: "Team", href: "#team" },
     { label: "Gallery", href: "#gallery" },
-    { label: "Participate", href: "#participate" },
+    { label: "Recommendations", href: "#recommendations" },
   ],
 };

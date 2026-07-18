@@ -72,16 +72,22 @@ export const vaccinationSchedule = [
 export const urgencyStats = [
   {
     icon: "AlertTriangle",
-    value: 3521,
-    suffix: "+",
-    label: "Confirmed diphtheria cases reported in Nigeria since 2022",
+    value: 7202,
+    label: "Confirmed diphtheria cases in Nigeria, as of 24 September 2023",
+    source: {
+      label: "Verify with NCDC",
+      url: "https://ncdc.gov.ng/news/495/update-on-the-federal-government%C3%A2%E2%82%AC%E2%84%A2s-response-to-the-diphtheria-outbreak",
+    },
   },
   {
     icon: "TrendingDown",
     value: 42,
-    prefix: "~",
     suffix: "%",
-    label: "Estimated DPT3 coverage gap in rural Kwara State communities",
+    label: "Nigerian children under 15 fully protected from diphtheria (nationwide survey)",
+    source: {
+      label: "Verify with NCDC",
+      url: "https://ncdc.gov.ng/news/495/update-on-the-federal-government%C3%A2%E2%82%AC%E2%84%A2s-response-to-the-diphtheria-outbreak",
+    },
   },
   {
     icon: "Calendar",
@@ -147,18 +153,18 @@ export const barriers = [
 
 export const studySites = [
   {
-    name: "Sobi Specialist Hospital",
+    name: "Markets and motor parks",
     type: "Primary · Outpatient Units",
     status: "primary",
   },
   {
-    name: "Community Mosques — Ilorin West",
-    type: "Secondary · Friday Jumu'ah",
+    name: "Religious centres",
+    type: "Secondary · High-Traffic Days",
     status: "secondary",
   },
   {
-    name: "Mandate Market & Environs",
-    type: "Secondary · High-Traffic Days",
-    status: "secondary",
+    name: "Educational institutions",
+    type: "High-traffic public spaces",
+    status: "supplementary",
   },
 ];

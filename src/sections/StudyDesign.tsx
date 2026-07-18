@@ -10,22 +10,22 @@ const methodCards = [
   {
     icon: Ruler,
     title: "STUDY DESIGN",
-    body: "Cross-sectional KAP survey design. Structured, interviewer-administered questionnaires covering 7 domains: socio-demographic data, knowledge (Yes/No/Not sure), attitude (5-point Likert), social influence, practice and uptake, barrier analysis, and qualitative FGD guide. 39 items total.",
+    body: "A one-group pretest–posttest quasi-experimental mixed-methods study in Ilorin West LGA, Kwara State. Adults aged 20 years and above completed baseline and post-intervention KAP assessments, with open-ended questions capturing community perspectives.",
   },
   {
     icon: Target,
     title: "SAMPLING STRATEGY",
-    body: "Purposive sampling targeting 400 adult community members in Ilorin West LGA. Recruitment at designated clinic days (primary) with mosque Friday Jumu'ah visits as secondary strategy to meet enrollment targets. All framed as community surveillance, not clinical research.",
+    body: "Multistage sampling was used. High-traffic public locations were purposively selected, then eligible adults who had lived in Ilorin West for at least one year were systematically recruited until the required sample size was reached.",
   },
   {
     icon: BarChart3,
     title: "DATA COLLECTION",
-    body: "Trained research assistants administer questionnaires face-to-face at hospitals, community mosques, and open markets. Data secured digitally via Google Forms. Weekly team review sessions ensure consistency and quality control.",
+    body: "A researcher-developed, expert-reviewed and pretested semi-structured questionnaire collected demographic, KAP and open-ended responses. Trained personnel delivered culturally appropriate English and Yoruba IEC materials and interactive health talks before re-administering the questionnaire.",
   },
   {
     icon: TrendingUp,
     title: "ANALYSIS PLAN",
-    body: "Data entered into SPSS/Stata. Descriptive statistics for KAP domain frequencies. Chi-square tests for associations. Logistic regression to identify predictors of DPT uptake. Findings to be submitted to a peer-reviewed journal and presented to Kwara State Ministry of Health.",
+    body: "Quantitative data were analysed in SPSS version 29 using frequencies, percentages, means and standard deviations. Pre- and post-intervention responses were compared with chi-square tests at p < 0.05. Qualitative responses underwent content analysis to identify themes and subthemes.",
   },
 ];
 
@@ -102,7 +102,7 @@ export default function StudyDesign() {
         <div data-header className="mb-12">
           <span className="gold-label">THE RESEARCH</span>
           <h2 className="font-display text-[26px] sm:text-[32px] lg:text-[40px] text-royal-blue leading-[1.2] mt-3">
-            A Rigorous Community-Based Epidemiological Study
+            A Community-Based Mixed-Methods Intervention Study
           </h2>
         </div>
 
@@ -134,7 +134,7 @@ export default function StudyDesign() {
         {/* Study Sites Panel */}
         <div data-sites className="mt-12 bg-navy rounded-2xl p-6 sm:p-8">
           <h3 className="font-display text-xl text-white mb-6">
-            Active Data Collection Sites
+            Selected Community Settings
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
