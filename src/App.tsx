@@ -12,6 +12,7 @@ import CampaignProgress from "./sections/CampaignProgress";
 import Team from "./sections/Team";
 import Gallery from "./sections/Gallery";
 import Participate from "./sections/Participate";
+import Funders from "./sections/Funders";
 import Footer from "./sections/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -57,6 +58,7 @@ function App() {
         <Team />
         <Gallery />
         <Participate />
+        <Funders />
       </main>
       <Footer />
     </div>

@@ -51,6 +51,16 @@ export default function Navbar() {
           </div>
         </a>
 
+        <div className="hidden 2xl:flex items-center gap-2 border-l border-white/15 pl-4">
+          <span className="text-[10px] text-white/45 uppercase tracking-wider">Funded by</span>
+          <a href="https://www.rstmh.org/" target="_blank" rel="noreferrer" aria-label="Visit the RSTMH website">
+            <img src="/images/funders/rstmh.jpg" alt="RSTMH" className="h-6 w-16 object-contain bg-white rounded-sm px-1" />
+          </a>
+          <a href="https://www.nihr.ac.uk/" target="_blank" rel="noreferrer" aria-label="Visit the NIHR website">
+            <img src="/images/funders/nihr.jpg" alt="NIHR" className="h-6 w-16 object-contain bg-white rounded-sm px-1" />
+          </a>
+        </div>
+
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8">
           {siteConfig.nav.map((item) => (

@@ -39,7 +39,8 @@ export const timeline = {
         "Full-day training session",
         "Field protocols standardized",
       ],
-      keyMoment: "Training session led by Abdulrahman Abdulbasit Opeyemi",
+      keyMoment:
+        "Training session led by Dr Dr. Ogunwale Kolawole Ayobami Tajudeen ",
     },
     {
       phase: 4,

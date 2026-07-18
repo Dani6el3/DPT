@@ -7,6 +7,7 @@ const navLinksRow1 = [
   { label: "Team", href: "#team" },
   { label: "Gallery", href: "#gallery" },
   { label: "Recommendations", href: "#recommendations" },
+  { label: "Funders", href: "#funders" },
 ];
 
 const navLinksRow2 = [
