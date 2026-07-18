@@ -10,8 +10,7 @@ export const team = {
     institution: "University of Ilorin Teaching Hospital, Kwara State",
     bio: "The lead researcher and principal investigator of this community epidemiological study. Responsible for study design, ethical oversight, institutional coordination, and academic supervision of the full research team. Abdulbasit is an early career researcher who combines pathogen- focused laboratory investigations with prevention - oriented community research and has built a strong publication record in infectious diseases across both local and international journals.",
     speciality: "Epidemiology & Infectious Disease Control",
-    email: "aabdulbasit5@gmail.com",
-    linkedin: "https://www.linkedin.com/in/abdulrahman-abdulbasit/",
+    email: "",
   },
   members: [
     {
@@ -95,8 +94,8 @@ export const team = {
       badgeColor: "royal-blue",
       photo: "/images/team/health.jpg",
       initials: "NA",
-      affiliation: "Director of Nursing Services, Zarumi PHC",
-      qualification: "RN, RM, BScN",
+      affiliation: "Community Health Officer, Ipata-Oloje PHC",
+      qualification: "Diploma in Community Health",
       bio: "Community Campaign Coordinator.",
       email: "",
     },
